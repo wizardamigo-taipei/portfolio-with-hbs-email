@@ -4,7 +4,7 @@ const express = require('express'),
   bodyParser = require('body-parser')
 
 let app = express()
-
+const PORT = process.env.PORT || 8081
 //view engine setup
 // App hbs template engine
 app.engine(
@@ -27,7 +27,7 @@ app.use(express.static('src'))
 var routes = require('./routes/router')
 app.use('/', routes)
 
-const server = app.listen(8081, function() {
+const server = app.listen(PORT, function() {
   let port = server.address().port
   console.log('Server started at http://localhost:%s', port)
 })
