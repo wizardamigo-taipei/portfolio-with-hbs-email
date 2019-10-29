@@ -1,0 +1,126 @@
+<header class="header container-fluid">
+    <div class="nav-toggle-wrapper">
+        <button class="nav-toggle-btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+    </div>
+    <nav class="header__nav">
+        <ul class="nav">
+            <li class="header__nav__item"><a href="#about" data-ref="about">about</a></li>
+            <li class="header__nav__item"><a href="#portfolio" data-ref="portfolio">work</a></li>
+            <li class="header__nav__item"><a href="#contact" data-ref="contact">contact</a></li>
+        </ul>
+    </nav>
+    <ul class="header__social-btns">
+        <li>
+            <a class="fa fa-facebook" href="#"></a>
+        </li>
+        <li>
+            <a class="fa fa-github" href="#" target="_blank"></a>
+        </li>
+    </ul>
+</header>
+
+<main>
+
+    <section id="about" class="main-section">
+        <div class="wrapper">
+            <p class="about__intro">
+                Hello there, We are Wizardamigos, Welcome to Taipei
+            </p>
+            <a href="#portfolio" class="global-button rotated scroll"> My portfolio </a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container main-section">
+        <div class="filters row js-dis">
+            <h4 class="filters__title"> <i class="fa fa-tags"></i> </h4>
+            <ul class="filters__list">
+                <li class="filters__label is-active"> All </li>
+                <li class="filters__label" data-cat="fcc"> aaa </li>
+                <li class="filters__label" data-cat="personal"> Personal projects </li>
+            </ul>
+        </div>
+
+        <div class="portfolio__project-wrapper row">
+
+            <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4 text-center" data-cat="fcc">
+                <a href="#" target="_blank" title="view live">
+                    <div class="portfolio__project__preview">
+                        <img src="#" alt="random quotes">
+                    </div>
+                    <div class="portfolio__project__description">
+                        <div class="info-wrapper">
+                            <h3 class="portfolio__project__name">Random Quotes</h3>
+                            <p class="portfolio__project__category">#aaa</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4" data-cat="fcc">
+                <a href="#" target="_blank" title="view live">
+                    <div class="portfolio__project__preview">
+                        <img src="#" alt="weather app">
+                    </div>
+                    <div class="portfolio__project__description">
+                        <div class="info-wrapper">
+                            <h3 class="portfolio__project__name">Weather App</h3>
+                            <p class="portfolio__project__category">#aaa</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="portfolio__project col-xs-12 col-sm-6 col-lg-4" data-cat="fcc">
+                <a href="#" target="_blank" title="view live">
+                    <div class="portfolio__project__preview">
+                        <img src="#" alt="wikipedia viewer">
+                    </div>
+                    <div class="portfolio__project__description">
+                        <div class="info-wrapper">
+                            <h3 class="portfolio__project__name">Wikipedia Viewer</h3>
+                            <p class="portfolio__project__category">#aaa</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="container">
+    <section id="contact" class="row main-section ">
+        <div class="col-xs-12 col-md-12 contact-form-wrapper">
+            <h2 class="heading"> Contact Me </h2>
+            <form class="contact-form" action="/a" method="post">
+                <div class="contact-form-el">
+                    <input type="text" id="name" name="name" class="input" required></input>
+                    <label for="name"> your name </label>
+                </div>
+                <div class="contact-form-el">
+                    <input type="email" id="email" name="email" class="input" required></input>
+                    <label for="email"> your e-mail </label>
+                </div>
+                <div class="contact-form-el">
+                    <textarea rows="7 " id="message" name="message" class="input" required></textarea>
+                    <label for="message"> your message </label>
+                </div>
+                <div class="text-right">
+                    <button type="submit" class="global-button"> send </button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    {{> footer}}
+</footer>
