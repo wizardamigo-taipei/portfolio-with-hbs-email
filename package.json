@@ -1,10 +1,20 @@
 {
   "name": "node101",
   "version": "1.0.0",
-  "description": "",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "12.x"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "express": "latest",
