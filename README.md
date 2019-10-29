@@ -13,7 +13,9 @@ Replace `router.js line 17 & 18 with your username and password`
 
 ## Local dev
 
-```bash
+```sh
 npm i
 npm run dev
+
+browse on localhost:8081
 ```
